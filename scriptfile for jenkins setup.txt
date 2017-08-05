@@ -1,7 +1,7 @@
 ﻿# To install java 8 
 
 
-yum install git
+yum install git -y
 
 yum install wget
 
@@ -15,7 +15,7 @@ git config --global user.email "andranagendra720@gmail.com"
 
 git remote add nag https://github.com/andranagendra/filee.git
 
-wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.tar.gz"
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.tar.gz" -y
 
 tar xzf jdk-8u131-linux-i586.tar.gz
 
@@ -48,7 +48,7 @@ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 
 yum install update
 
-yum install jenkins
+yum install jenkins -y
 
 service jenkins status
 
@@ -68,7 +68,7 @@ service httpd start
 java -version
 
 cd /opt
-wget wget http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+wget wget http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz -y
 
 tar xzvf apache-maven-3.3.9-bin.tar.gz
 cd apache-maven-3.3.9
