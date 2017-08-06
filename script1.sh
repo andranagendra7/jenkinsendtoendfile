@@ -59,6 +59,11 @@ service jenkins start
 
 rpm -qa jenkins
 
+# To install jenkins by using war package
+
+#wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+#java -jar jenkins.war
+
 #yum install httpd
 service httpd status
 service httpd start
